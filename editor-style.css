@@ -1223,7 +1223,20 @@ span.page-numbers:hover {
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
-.comment {
+.comment-respond small, .comment-form small {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.comment-respond small #cancel-comment-reply-link, .comment-form small #cancel-comment-reply-link {
+  --tw-text-opacity: 1;
+  color: rgba(153, 27, 27, var(--tw-text-opacity));
+}
+.comments-area > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+.comments-area .comment {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   border-left-width: 4px;
@@ -1232,25 +1245,25 @@ span.page-numbers:hover {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.comment article > :not([hidden]) ~ :not([hidden]) {
+.comments-area .comment article > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
-.comment article footer .comment-author .avatar {
+.comments-area .comment article footer .comment-author .avatar {
   margin-right: 1rem;
   display: inline-block;
   height: 4rem;
   width: 4rem;
   border-radius: 9999px;
 }
-.comment article footer .comment-metadata {
+.comments-area .comment article footer .comment-metadata {
   font-size: 0.75rem;
   line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
-.comment article .reply {
+.comments-area .comment article .reply {
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;

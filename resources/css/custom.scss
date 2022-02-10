@@ -200,23 +200,32 @@ span.page-numbers {
 .comment-respond,
 .comment-form {
     @apply space-y-4;
+    small {
+        @apply text-sm;
+        #cancel-comment-reply-link {
+            @apply text-red-800;
+        }
+    }
 }
-.comment {
-    @apply border-l-4 border-blue-200 px-4 my-2;
-    article {
-        @apply space-y-2;
-        footer {
-            .comment-author {
-                .avatar {
-                    @apply h-16 w-16 rounded-full inline-block mr-4;
+.comments-area {
+    @apply space-y-4;
+    .comment {
+        @apply border-l-4 border-blue-200 px-4 my-2;
+        article {
+            @apply space-y-2;
+            footer {
+                .comment-author {
+                    .avatar {
+                        @apply h-16 w-16 rounded-full inline-block mr-4;
+                    }
+                }
+                .comment-metadata {
+                    @apply text-gray-500 text-xs;
                 }
             }
-            .comment-metadata {
-                @apply text-gray-500 text-xs;
+            .reply {
+                @apply text-yellow text-sm;
             }
-        }
-        .reply {
-            @apply text-yellow text-sm;
         }
     }
 }
