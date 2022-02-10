@@ -1,0 +1,36 @@
+.block-editor__typewriter {
+    @apply font-sans;
+}
+
+.wp-block {
+    @apply max-w-screen-lg;
+}
+
+.wp-block[data-align='wide'] {
+    @apply max-w-screen-xl;
+}
+
+.wp-block[data-align='full'] {
+    @apply max-w-full;
+}
+
+.wp-block-columns {
+    @apply mb-0;
+}
+
+.wp-block-paragraph {
+    @apply leading-relaxed;
+}
+
+ul,
+ol {
+    &.block-editor-block-list__block {
+        @apply pl-10 space-y-1;
+        li {
+            @apply list-outside leading-relaxed;
+        }
+        ul  {
+            @apply mb-0;
+        }
+    }
+}
