@@ -10,7 +10,7 @@ if (post_password_required()) {
 }
 ?>
 
-<div id="comments" class="comments-area my-8">
+<div id="comments" class="comments-area ">
 
 	<?php if (have_comments()) : ?>
 

@@ -13,7 +13,7 @@
 
 	<?php endif; ?>
 
-	<header class="p-4 lg:px-8 lg:py-4 border-b border-gray-200">
+	<header class="p-4 lg:px-8 lg:py-4 ">
 
 		<h1 class="mb-1 text-4xl lg:text-5xl font-bold leading-none hypens"> <?php the_title() ?></h1>
 		<?php if ($post->post_type == "post") : ?>
@@ -21,13 +21,17 @@
 		<?php endif; ?>
 	</header>
 
-	<div class="article-content px-4 lg:px-8 py-4 hypens">
+	<div class="article-content px-4 lg:px-8 py-4 hypens border-b border-t border-gray-200">
 		<?php the_content(); ?>
+
+	</div>
+	<div class=" px-4 lg:px-8 py-4 hypens">
 		<?php
 		// If comments are open or we have at least one comment, load up the comment template.
 		if (comments_open() || get_comments_number()) :
 			comments_template();
 		endif; ?>
+
 	</div>
 
 

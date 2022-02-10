@@ -29,8 +29,16 @@ ol {
         li {
             @apply list-outside leading-relaxed;
         }
-        ul  {
+        ul {
             @apply mb-0;
         }
     }
+}
+
+* {
+    @apply font-sans;
+}
+
+h1 {
+    @apply font-semibold;
 }

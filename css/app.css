@@ -1119,6 +1119,9 @@ select {
 .border-r {
 	border-right-width: 1px;
 }
+.border-t {
+	border-top-width: 1px;
+}
 .border-gray-200 {
 	--tw-border-opacity: 1;
 	border-color: rgba(229, 231, 235, var(--tw-border-opacity));
@@ -2018,9 +2021,6 @@ span.page-numbers:hover {
 	--tw-space-y-reverse: 0;
 	margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
 	margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-.comment-respond, .comment-form {
-	margin-top: 1rem;
 }
 .comment-respond > :not([hidden]) ~ :not([hidden]), .comment-form > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-y-reverse: 0;
