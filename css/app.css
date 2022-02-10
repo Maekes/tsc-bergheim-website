@@ -847,10 +847,6 @@ select {
 	margin-top: 0.75rem;
 	margin-bottom: 0.75rem;
 }
-.my-8 {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
@@ -1104,11 +1100,11 @@ select {
 .rounded {
 	border-radius: 0.25rem;
 }
-.rounded-full {
-	border-radius: 9999px;
-}
 .rounded-lg {
 	border-radius: 0.5rem;
+}
+.rounded-full {
+	border-radius: 9999px;
 }
 .rounded-2xl {
 	border-radius: 1rem;
@@ -1116,11 +1112,11 @@ select {
 .border-b {
 	border-bottom-width: 1px;
 }
-.border-r {
-	border-right-width: 1px;
-}
 .border-t {
 	border-top-width: 1px;
+}
+.border-r {
+	border-right-width: 1px;
 }
 .border-gray-200 {
 	--tw-border-opacity: 1;
@@ -1130,6 +1126,10 @@ select {
 	--tw-border-opacity: 1;
 	border-color: rgba(243, 244, 246, var(--tw-border-opacity));
 }
+.bg-white {
+	--tw-bg-opacity: 1;
+	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
 .bg-blue {
 	--tw-bg-opacity: 1;
 	background-color: rgba(1, 111, 185, var(--tw-bg-opacity));
@@ -1137,10 +1137,6 @@ select {
 .bg-gray-50 {
 	--tw-bg-opacity: 1;
 	background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
-}
-.bg-white {
-	--tw-bg-opacity: 1;
-	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 .bg-opacity-90 {
 	--tw-bg-opacity: 0.9;
@@ -1187,6 +1183,9 @@ select {
 	-o-object-fit: cover;
 	   object-fit: cover;
 }
+.p-4 {
+	padding: 1rem;
+}
 .p-2 {
 	padding: 0.5rem;
 }
@@ -1196,8 +1195,8 @@ select {
 .p-0 {
 	padding: 0px;
 }
-.p-4 {
-	padding: 1rem;
+.p-6 {
+	padding: 1.5rem;
 }
 .px-4 {
 	padding-left: 1rem;
@@ -2090,6 +2089,10 @@ span.page-numbers:hover {
 		width: 10rem;
 	}
 
+	.sm\:grid-cols-2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
 	.sm\:flex-row {
 		flex-direction: row;
 	}
@@ -2254,12 +2257,12 @@ span.page-numbers:hover {
 		flex: 0 1 auto;
 	}
 
-	.lg\:grid-cols-2 {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-	}
-
 	.lg\:grid-cols-3 {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.lg\:grid-cols-2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
 	.lg\:flex-row {
@@ -2318,6 +2321,14 @@ span.page-numbers:hover {
 
 	.lg\:bg-transparent {
 		background-color: transparent;
+	}
+
+	.lg\:p-6 {
+		padding: 1.5rem;
+	}
+
+	.lg\:p-8 {
+		padding: 2rem;
 	}
 
 	.lg\:px-24 {
