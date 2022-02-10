@@ -186,3 +186,11 @@ add_filter('excerpt_length', 'mytheme_custom_excerpt_length', 999);
 
 // Remove <p> and <br/> from Contact Form 7
 add_filter('wpcf7_autop_or_not', '__return_false');
+
+
+function admin_default_page()
+{
+	return '/';
+}
+
+add_filter('login_redirect', 'admin_default_page');
