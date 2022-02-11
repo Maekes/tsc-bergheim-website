@@ -194,3 +194,11 @@ function admin_default_page()
 }
 
 add_filter('login_redirect', 'admin_default_page');
+
+function my_custom_login_logo()
+{
+	echo '<style type="text/css">
+	.login h1 a { background-image: url(/wp-content/uploads/2022/01/logo.png) !important; hi }
+	</style>';
+}
+add_action('login_head',  'my_custom_login_logo');
