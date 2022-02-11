@@ -178,6 +178,9 @@ span.page-numbers {
     .wpcf7-submit {
         @apply mx-auto text-lg cursor-pointer w-full lg:w-1/3 block rounded-md px-4 py-2 bg-blue hover:bg-opacity-80 text-white font-semibold shadow;
     }
+    .g-recaptcha {
+        @apply block mb-4;
+    }
 }
 
 .button {
